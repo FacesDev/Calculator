@@ -10,7 +10,7 @@ form {
   height: auto;
   margin: 100px auto;
   background-color: #A9D7A3;
-  z-index : 1;
+  z-index: 1;
 }
 input[type='text'] {
   width: 70%;
@@ -485,3 +485,12 @@ _________Ball Bounce______________________*/
 }
 
 /*ball bounce source code credit: Daniel Sternlicht*/
+
+/*
+@media screen and ( min-width:480px ) {
+
+}
+
+@media screen and ( min-width:769px ) {
+
+}*/

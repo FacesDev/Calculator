@@ -50,7 +50,7 @@ function runCageTime(){
 function runCageTimeCoolDown() {
   document.body.style.backgroundImage = "";
   nicksCageImg.style.position = "absolute";
-  nicksCageImg.style.left -= "60%";
+  nicksCageImg.style.left -= "0%";
   oneButton.style.backgroundImage = "";
   twoButton.style.backgroundImage = "";
   threeButton.style.backgroundImage = "";
