@@ -5,11 +5,12 @@
 }
 
 form {
+  position:relative;
   width: 325px;
   height: auto;
   margin: 100px auto;
   background-color: #A9D7A3;
-
+  z-index: 1;
 }
 input[type='text'] {
   width: 70%;
@@ -54,6 +55,19 @@ div > input {
 .hoverEffect:hover {
   background-color: #82C276;
 }
+
+/*---------CAGE-----------*/
+.nicksCage {
+  position: absolute;
+  left: 40%;
+  top: 20%;
+
+}
+.nicksCage > img {
+  border-radius: 50%;
+}
+
+
 
 /*
 _________Ball Bounce______________________*/
