@@ -7,9 +7,13 @@
 
   </head>
   <body>
+      <div class=nicksCage onClick="runCageTime()">
+        <img src="https://www.placecage.com/200/300" alt="Cage" id="nicksCageImg" onClick="runCageTime()">
+      </div>
+
       <form class='buttons'>
         <div id="ballWrapper">
-	         <div id="ball" value="%" onClick="run(this)">Modulus</div>
+	         <div id="ball" value="%" onClick="runModulus(this)">Modulus</div>
 	          <div id="ballShadow"></div>
         </div>
         <div id="ballWrapper2">
@@ -18,25 +22,25 @@
         </div>
 
         <div class='rowTop'>
-          <input type="button" value="C" onClick="runClear(this)" id="topInputClear" class="hoverEffect">
+          <input type="button" value="C" onClick="runClear(this);runCageTimeCoolDown()" id="topInputClear" class="hoverEffect">
           <input type="text" value="" id="numberBar" disabled>
         </div>
         <div class="row">
-          <input type="button" value="7" class="number" onClick="run(this)">
-          <input type="button" value="8" class="number" onClick="run(this)">
-          <input type="button" value="9" class="number" onClick="run(this)">
+          <input type="button" id="sevenButton" value="7" class="number" onClick="run(this)">
+          <input type="button" value="8" class="number" id="eightButton" onClick="run(this)">
+          <input type="button" id="nineButton" value="9" class="number" onClick="run(this)">
           <input type="button" value="/" onClick="run(this)" class="lightGreenCSS">
         </div>
         <div class="row">
-            <input type="button" value="4" class="number" onClick="run(this)">
-            <input type="button" value="5" class="number" onClick="run(this)">
-            <input type="button" value="6" class="number" onClick="run(this)">
-            <input type="button" value="x" onClick="runAdd(this)" class="lightGreenCSS">
+            <input type="button" id="sixButton" value="4" class="number" onClick="run(this)">
+            <input type="button" id="fiveButton" value="5" class="number" onClick="run(this)">
+            <input type="button" id="fourButton" value="6" class="number" onClick="run(this)">
+            <input type="button" value="x" onClick="runMult(this)" class="lightGreenCSS">
         </div>
         <div class="row">
-          <input type="button" value="1" class="number" onClick="run(this)">
-          <input type="button" value="2" class="number" onClick="run(this)">
-          <input type="button" value="3" class="number" onClick="run(this)">
+          <input type="button" id="oneButton" value="1" class="number" onClick="run(this)">
+          <input type="button" id="twoButton" value="2" class="number" onClick="run(this)">
+          <input type="button" id="threeButton" value="3" class="number" onClick="run(this)">
           <input type="button" value="-" onClick="run(this)" class="lightGreenCSS">
         </div>
         <div class="row">
@@ -44,7 +48,7 @@
 
           <input type="button" value="." onClick="run(this)">
 
-          <input type="button" value="=" onClick="runEqual(this)" class="hoverEffect">
+          <input type="button" value="=" onClick="runEqual(this);runMove()" class="hoverEffect">
           <input type="button" value="+" onClick="run(this)" class="lightGreenCSS">
         </div>
       </form>

@@ -5,11 +5,12 @@
 }
 
 form {
+  position:relative;
   width: 325px;
   height: auto;
   margin: 100px auto;
   background-color: #A9D7A3;
-
+  z-index: 1;
 }
 input[type='text'] {
   width: 70%;
@@ -37,7 +38,7 @@ form > div {
 
 div > input {
   margin: .5px;
-  height:10vh;
+  height:88px;
   width:10vw;
   background-color: #61B34F;
   color:white;
@@ -55,6 +56,16 @@ div > input {
   background-color: #82C276;
 }
 
+/*---------CAGE-----------*/
+.nicksCage {
+  position: absolute;
+  left: 43%;
+  top: 20%;
+}
+.nicksCage > img {
+  border-radius: 50%;
+  cursor: crosshair;
+}
 /*
 _________Ball Bounce______________________*/
 
@@ -472,3 +483,5 @@ _________Ball Bounce______________________*/
 		animation-timing-function: ease-in;
 	}
 }
+
+/*ball bounce source code credit: Daniel Sternlicht*/
