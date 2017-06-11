@@ -2,15 +2,16 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Calulate This Shizzz</title>
+    <title>Cageulator</title>
     <link href="main.css" rel="stylesheet">
+    <link href="./favicon.ico" rel="icon" type="calcicon" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
   </head>
   <body>
       <div class=nicksCage onClick="runCageTime()">
         <img src="https://www.placecage.com/200/300" alt="Cage" id="nicksCageImg" onClick="runCageTime()">
       </div>
-
       <form class='buttons'>
         <div id="ballWrapper">
 	         <div id="ball" value="%" onClick="runModulus(this)">Modulus</div>
@@ -20,7 +21,6 @@
 	         <div id="ball" class="ball2Text" onClick="runSqrrt()">Square Root</div>
 	          <div id="ballShadow"></div>
         </div>
-
         <div class='rowTop'>
           <input type="button" value="C" onClick="runClear(this);runCageTimeCoolDown()" id="topInputClear" class="hoverEffect">
           <input type="text" value="" id="numberBar" disabled>
@@ -45,9 +45,7 @@
         </div>
         <div class="row">
           <input type="button" value="0" class="number zero" onClick="run(this)">
-
           <input type="button" value="." onClick="run(this)">
-
           <input type="button" value="=" onClick="runEqual(this);runMove()" class="hoverEffect">
           <input type="button" value="+" onClick="run(this)" class="lightGreenCSS">
         </div>
