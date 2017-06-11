@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Calulate This Shizzz</title>
+    <link href="main.css" rel="stylesheet">
+
+  </head>
+  <body>
+      <form class='buttons'>
+        <div id="ballWrapper">
+	         <div id="ball" value="%" onClick="run(this)">Modulus</div>
+	          <div id="ballShadow"></div>
+        </div>
+        <div id="ballWrapper2">
+	         <div id="ball" class="ball2Text" onClick="runSqrrt()">Square Root</div>
+	          <div id="ballShadow"></div>
+        </div>
+
+        <div class='rowTop'>
+          <input type="button" value="C" onClick="runClear(this)" id="topInputClear" class="hoverEffect">
+          <input type="text" value="" id="numberBar" disabled>
+        </div>
+        <div class="row">
+          <input type="button" value="7" class="number" onClick="run(this)">
+          <input type="button" value="8" class="number" onClick="run(this)">
+          <input type="button" value="9" class="number" onClick="run(this)">
+          <input type="button" value="/" onClick="run(this)" class="lightGreenCSS">
+        </div>
+        <div class="row">
+            <input type="button" value="4" class="number" onClick="run(this)">
+            <input type="button" value="5" class="number" onClick="run(this)">
+            <input type="button" value="6" class="number" onClick="run(this)">
+            <input type="button" value="x" onClick="runAdd(this)" class="lightGreenCSS">
+        </div>
+        <div class="row">
+          <input type="button" value="1" class="number" onClick="run(this)">
+          <input type="button" value="2" class="number" onClick="run(this)">
+          <input type="button" value="3" class="number" onClick="run(this)">
+          <input type="button" value="-" onClick="run(this)" class="lightGreenCSS">
+        </div>
+        <div class="row">
+          <input type="button" value="0" class="number zero" onClick="run(this)">
+
+          <input type="button" value="." onClick="run(this)">
+
+          <input type="button" value="=" onClick="runEqual(this)" class="hoverEffect">
+          <input type="button" value="+" onClick="run(this)" class="lightGreenCSS">
+        </div>
+      </form>
+    <script type="text/javascript" src="main.js"></script>
+  </body>
+</html>
