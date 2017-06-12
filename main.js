@@ -47,18 +47,18 @@ function runCageTime(){
   nineButton.style.backgroundImage = 'url(./images/cage3.jpg)';
 
 }
-// function runCageTimeCoolDown() {
-//   document.body.style.backgroundImage = "";
-//   nicksCageImg.style.position = "absolute";
-//   nicksCageImg.style.left -= "0%";
-//   oneButton.style.backgroundImage = "";
-//   twoButton.style.backgroundImage = "";
-//   threeButton.style.backgroundImage = "";
-//   fourButton.style.backgroundImage = "";
-//   fiveButton.style.backgroundImage = "";
-//   sixButton.style.backgroundImage = "";
-//   sevenButton.style.backgroundImage = "";
-//   eightButton.style.backgroundImage = "";
-//   nineButton.style.backgroundImage = "";
-//
-// }
+function runCageTimeCoolDown() {
+  document.body.style.backgroundImage = "";
+  nicksCageImg.style.position = "absolute";
+  nicksCageImg.style.left -= "0%";
+  oneButton.style.backgroundImage = "";
+  twoButton.style.backgroundImage = "";
+  threeButton.style.backgroundImage = "";
+  fourButton.style.backgroundImage = "";
+  fiveButton.style.backgroundImage = "";
+  sixButton.style.backgroundImage = "";
+  sevenButton.style.backgroundImage = "";
+  eightButton.style.backgroundImage = "";
+  nineButton.style.backgroundImage = "";
+
+}
